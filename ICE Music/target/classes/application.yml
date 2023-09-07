@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    username: test
+    password: test
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+  jpa:
+    defer-datasource-initialization: true
+    show-sql: true
+
+  h2:
+    console:
+      path: /h2
+      enabled: true
+  jackson:
+    default-property-inclusion: non_null
+  profiles:
+    active: default
+
+server:
+  servlet:
+    context-path: /api/v1

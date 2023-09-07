@@ -1,0 +1,1 @@
+INSERT INTO counter (count, previous_artist_id) VALUES (1, 0);
